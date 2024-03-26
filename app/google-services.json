@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "53562386356",
+    "firebase_url": "https://mine-project-f43c2-default-rtdb.firebaseio.com",
+    "project_id": "mine-project-f43c2",
+    "storage_bucket": "mine-project-f43c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53562386356:android:d2380235682148ca08f4e1",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYRFYm-o0OxABovR9rCJNFhUPluUBs2c4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

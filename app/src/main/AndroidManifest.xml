@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".LogInPage"
+            android:exported="false" />
+
+        <activity
+            android:name=".HomePage"
+            android:exported="false" />
+
+        <activity
+            android:name=".sign_in_page"
+            android:exported="false" />
+
+        <activity
+            android:name=".user_notify"
+            android:exported="false" />
+
+        <activity
+            android:name=".user_page"
+            android:exported="false" />
+
+        <activity
+            android:name=".article_1"
+            android:exported="false" />
+
+        <activity
+            android:name=".article_2"
+            android:exported="false" />
+
+        <activity
+            android:name=".document_page"
+            android:exported="false" />
+
+        <activity
+            android:name=".meet_page"
+            android:exported="false" />
+
+        <activity
+            android:name=".prep_page"
+            android:exported="false" />
+
+        <activity
+            android:name=".prep_calendar"
+            android:exported="false" />
+
+        <activity
+            android:name=".prep_teacher"
+            android:exported="false" />
+
+        <activity
+            android:name=".prep_format"
+            android:exported="false" />
+
+        <activity
+            android:name=".teacher_a1"
+            android:exported="false" />
+
+        <activity
+            android:name=".teacher_a2"
+            android:exported="false" />
+
+        <activity
+            android:name=".teacher_b1"
+            android:exported="false" />
+
+        <activity
+            android:name=".teacher_b2"
+            android:exported="false" />
+
+        <activity
+            android:name=".user_doc"
+            android:exported="false" />
+
+        <activity
+            android:name=".user_help"
+            android:exported="false" />
+
+        <activity
+            android:name=".user_status"
+            android:exported="false" />
+
+        <activity
+            android:name=".ihsanova"
+            android:exported="false" />
+
+        <activity
+            android:name=".sultangaliyeva"
+            android:exported="false" />
+
+        <activity
+            android:name=".berik"
+            android:exported="false" />
+
+        <activity
+            android:name=".lyan"
+            android:exported="false" />
+
+        <activity
+            android:name=".ubigaliyeva"
+            android:exported="false" />
+
+        <activity
+            android:name=".hairusheva"
+            android:exported="false" />
+
+        <activity
+            android:name=".ayapbergenova"
+            android:exported="false" />
+
+        <activity
+            android:name=".nauryzbekova"
+            android:exported="false" />
+
+        <activity
+            android:name=".yerzhanova"
+            android:exported="false" />
+
+        <activity
+            android:name=".bagytova"
+            android:exported="false" />
+
+        <activity
+            android:name=".sarzhanova"
+            android:exported="false" />
+
+        <activity
+            android:name=".tanartarova"
+            android:exported="false" />
+
+        <activity
+            android:name=".dauletova"
+            android:exported="false" />
+
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" /> <!-- <activity -->
+        <!-- android:name=".MainActivity2" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
