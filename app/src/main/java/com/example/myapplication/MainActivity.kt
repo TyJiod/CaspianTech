@@ -12,8 +12,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.loading_page)
 
-        val button: Button =
-            findViewById(R.id.getStartedButton)
+        val button: Button = findViewById(R.id.getStartedButton)
             button.setOnClickListener{
                 val intent = Intent(this, LogInPage::class.java)
                 startActivity(intent)

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.ComponentActivity
 
+
 class user_doc : ComponentActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {

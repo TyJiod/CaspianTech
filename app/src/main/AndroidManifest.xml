@@ -21,8 +21,9 @@
             android:exported="false" />
 
         <activity
-            android:name=".sign_in_page"
-            android:exported="false" />
+            android:name=".SignInPage"
+
+            />
 
         <activity
             android:name=".user_notify"

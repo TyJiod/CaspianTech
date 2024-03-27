@@ -73,7 +73,8 @@
             android:inputType="textEmailAddress"
             android:padding="12dp"
             android:textColor="#868686"
-            android:textSize="13sp" />
+            android:textSize="13sp"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/PasswordInput"
