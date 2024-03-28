@@ -2,11 +2,14 @@ package com.example.myapplication
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.graphics.Bitmap
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.core.content.ContextCompat.startActivity
+import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DataSnapshot
@@ -23,10 +26,15 @@ class HomePage : ComponentActivity() {
     private lateinit var database: FirebaseDatabase
     private lateinit var currentUser: FirebaseUser
     private lateinit var databaseReference: DatabaseReference
+
+    private lateinit var profileImageButton: ImageButton
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_page)
+
+        profileImageButton = findViewById(R.id.profileImageButton)
 
         welcomeBackTextView = findViewById(R.id.welcomeBackTextView)
 
@@ -41,10 +49,23 @@ class HomePage : ComponentActivity() {
                 val userName = snapshot.child("name").getValue(String::class.java)
                 val welcomeMessage = "Welcome back, ${userName ?: "User"}"
                 welcomeBackTextView.text = welcomeMessage
-            }
 
+                // Получить URL-адрес профильной фотографии пользователя из базы данных
+                val profilePictureUrl = snapshot.child("profilePictureUrl").getValue(String::class.java)
+
+                // Загрузить и установить изображение профиля с помощью Glide, если URL-адрес не пустой
+                profilePictureUrl?.let {
+                    Glide.with(this@HomePage)
+                        .asBitmap()
+                        .load(profilePictureUrl)
+                        .override(100,100)
+                        .circleCrop()
+                        .encodeFormat(Bitmap.CompressFormat.JPEG) // Установка формата компрессии
+                        .encodeQuality(80) // Установка качества компрессии (0 - 100)
+                        .into(profileImageButton)
+                }
+            }
             override fun onCancelled(error: DatabaseError) {
-                // Handle error
             }
         })
     }
