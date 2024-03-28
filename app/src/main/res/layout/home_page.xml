@@ -189,30 +189,6 @@
         app:layout_constraintStart_toStartOf="@+id/imageView18"
         app:layout_constraintTop_toTopOf="@+id/imageView18" />
 
-    <ImageButton
-        android:id="@+id/imageButton23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="18dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/bell"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="onClickButton2"/>
-
-    <ImageButton
-        android:id="@+id/profileImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="12dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/user"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="onClickButton3"/>
-
     <ImageView
         android:id="@+id/imageView157"
         android:layout_width="wrap_content"
@@ -224,6 +200,30 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
+        android:id="@+id/imageButton23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/bell"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="Notification"/>
+
+    <ImageButton
+        android:id="@+id/profileImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="12dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="ProfileIcon"/>
+
+    <ImageButton
         android:id="@+id/imageButton9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -233,7 +233,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView157"
         app:layout_constraintStart_toStartOf="@+id/imageView157"
         app:layout_constraintTop_toTopOf="@+id/imageView157"
-        android:onClick="onClickButton4"/>
+        android:onClick="HomePage"/>
 
     <ImageButton
         android:id="@+id/imageButton11"
@@ -245,7 +245,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView157"
         app:layout_constraintStart_toEndOf="@+id/imageButton9"
         app:layout_constraintTop_toTopOf="@+id/imageView157"
-        android:onClick="onClickButton5"/>
+        android:onClick="DocumentPage"/>
 
     <ImageButton
         android:id="@+id/imageButton12"
@@ -257,7 +257,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView157"
         app:layout_constraintStart_toEndOf="@+id/imageButton11"
         app:layout_constraintTop_toTopOf="@+id/imageView157"
-        android:onClick="onClickButton6"/>
+        android:onClick="MeetPage"/>
 
     <ImageButton
         android:id="@+id/imageButton14"
@@ -269,7 +269,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView157"
         app:layout_constraintStart_toEndOf="@+id/imageButton12"
         app:layout_constraintTop_toTopOf="@+id/imageView157"
-        android:onClick="onClickButton7"/>
+        android:onClick="PrepPage"/>
 
     <ImageButton
         android:id="@+id/imageButton15"
@@ -281,6 +281,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView157"
         app:layout_constraintStart_toEndOf="@+id/imageButton14"
         app:layout_constraintTop_toTopOf="@+id/imageView157"
-        android:onClick="onClickButton8"/>
+        android:onClick="UserPage"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
