@@ -3,7 +3,9 @@ package com.example.myapplication
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.text.TextUtils
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -15,6 +17,8 @@ class LogInPage : ComponentActivity() {
     private lateinit var passwordEditText: EditText
     private lateinit var firebaseAuth: FirebaseAuth
 
+    private lateinit var logInButton: Button
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +27,32 @@ class LogInPage : ComponentActivity() {
         emailEditText = findViewById(R.id.EmailInput)
         passwordEditText = findViewById(R.id.PasswordInput)
         firebaseAuth = FirebaseAuth.getInstance()
+
+        logInButton = findViewById(R.id.logInButton)
+
+        logInButton.setOnClickListener {
+            val email = emailEditText.text.toString()
+            val password = passwordEditText.text.toString()
+
+            // Perform basic validation
+            if (TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
+                Toast.makeText(this, "Please enter email and password", Toast.LENGTH_SHORT).show()
+            }
+            firebaseAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
+                        startActivity(Intent(this, HomePage::class.java))
+                    } else {
+                        Toast.makeText(
+                            baseContext, "Authentication failed: ${task.exception?.message}",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                }
+                .addOnFailureListener{
+                    Toast.makeText(this,"something went wrong try again", Toast.LENGTH_SHORT).show()
+                }
+        }
     }
 
     fun onClickButton1(view: View) {
@@ -33,30 +63,5 @@ class LogInPage : ComponentActivity() {
         val intent = Intent(this, SignInPage::class.java)
         startActivity(intent)
     }
-
-    fun signIn(view: View) {
-        val email = emailEditText.text.toString()
-        val password = passwordEditText.text.toString()
-
-        // Perform basic validation
-        if (email.isBlank() || password.isBlank()) {
-            Toast.makeText(this, "Please enter email and password", Toast.LENGTH_SHORT).show()
-            return
-        }
-
-        // Sign in the user with email and password
-        firebaseAuth.signInWithEmailAndPassword(email, password)
-            .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
-                    // Sign in success, navigate to the home page
-                    startActivity(Intent(this, HomePage::class.java))
-                } else {
-                    // If sign in fails, display a message to the user.
-                    Toast.makeText(
-                        baseContext, "Authentication failed: ${task.exception?.message}",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
-            }
-    }
 }
+
