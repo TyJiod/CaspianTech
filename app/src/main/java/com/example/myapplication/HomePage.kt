@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import UserPhotoUtil
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Bitmap
@@ -42,27 +43,18 @@ class HomePage : ComponentActivity() {
         currentUser = firebaseAuth.currentUser!!
         databaseReference = database.reference.child("users").child(currentUser.uid)
 
-        // Listen for changes in the user's name in the database
+        val userPhotoUtil = UserPhotoUtil()
+
+        userPhotoUtil.setDatabaseReference(databaseReference)
+
+        userPhotoUtil.loadUserPhoto(profileImageButton)
+
         databaseReference.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val userName = snapshot.child("name").getValue(String::class.java)
                 val welcomeMessage = "Welcome back, ${userName ?: "User"}"
                 welcomeBackTextView.text = welcomeMessage
 
-                // Получить URL-адрес профильной фотографии пользователя из базы данных
-                val profilePictureUrl = snapshot.child("profilePictureUrl").getValue(String::class.java)
-
-                // Загрузить и установить изображение профиля с помощью Glide, если URL-адрес не пустой
-                profilePictureUrl?.let {
-                    Glide.with(this@HomePage)
-                        .asBitmap()
-                        .load(profilePictureUrl)
-                        .override(100,100)
-                        .circleCrop()
-                        .encodeFormat(Bitmap.CompressFormat.JPEG) // Установка формата компрессии
-                        .encodeQuality(80) // Установка качества компрессии (0 - 100)
-                        .into(profileImageButton)
-                }
             }
             override fun onCancelled(error: DatabaseError) {
             }
@@ -75,10 +67,6 @@ class HomePage : ComponentActivity() {
 
     fun ProfileIcon(view: View) {
         startActivity(Intent(this, user_page::class.java))
-    }
-
-    fun HomePage(view: View) {
-        startActivity(Intent(this, HomePage::class.java))
     }
 
     fun DocumentPage(view: View) {

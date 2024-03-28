@@ -53,16 +53,17 @@ class user_page : ComponentActivity() {
                 val userName = snapshot.child("name").getValue(String::class.java)
                 userNameTextView.text = userName?:"User"
 
+                val placeHolderImage = R.drawable.user_2
                 // Получить URL-адрес фотографии пользователя из базы данных
                 val profilePictureUrl = snapshot.child("profilePictureUrl").getValue(String::class.java)
 
                 // Загрузить и отобразить фотографию с помощью Glide
                 if (!profilePictureUrl.isNullOrEmpty()) {
-//                    Glide.with(this@user_page).load(profilePictureUrl).circleCrop().into(userProfilePicture)
+//
 
                     Glide.with(this@user_page)
                         .asBitmap()
-                        .load(profilePictureUrl)
+                        .load(profilePictureUrl?: placeHolderImage)
                         .override(500,500)
                         .circleCrop()
                         .encodeFormat(Bitmap.CompressFormat.JPEG) // Установка формата компрессии
