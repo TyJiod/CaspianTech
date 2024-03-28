@@ -16,10 +16,11 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="18dp"
             android:background="@android:color/transparent"
+            android:onClick="onClickButton2"
             android:src="@drawable/bell"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:onClick="onClickButton2"/>
+            tools:ignore="TouchTargetSizeCheck" />
 
         <ImageButton
             android:id="@+id/imageButton27"
@@ -37,8 +38,8 @@
             android:id="@+id/textView38"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="22dp"
-            android:layout_marginTop="22dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/open_sans_semibold"
             android:text="What’s your English level?"
             android:textColor="#000000"
@@ -46,70 +47,79 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="594dp"
-            android:layout_height="154dp"
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
-            android:orientation="horizontal"
-            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView38">
 
-            <ImageView
-                android:id="@+id/imageView82"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/a1"
-                android:onClick="onClickButtona1"/>
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="154dp"
+                android:orientation="horizontal"
+                android:padding="15dp">
 
-            <ImageView
-                android:id="@+id/imageView83"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/a2"
-                android:onClick="onClickButtona2"/>
+                <ImageView
+                    android:id="@+id/imageView82"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickButtona1"
+                    android:src="@drawable/a1" />
 
-            <ImageView
-                android:id="@+id/imageView84"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/b1"
-                android:onClick="onClickButtonb1"/>
+                <ImageView
+                    android:id="@+id/imageView83"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickButtona2"
+                    android:src="@drawable/a2" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/b2"
-                android:onClick="onClickButtonb2"/>
+                <ImageView
+                    android:id="@+id/imageView84"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickButtonb1"
+                    android:src="@drawable/b1"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/c1" />
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickButtonb2"
+                    android:src="@drawable/b2" />
 
-        </LinearLayout>
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/c1" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
 
         <TextView
             android:id="@+id/textView39"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="22dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="32dp"
             android:fontFamily="@font/open_sans_semibold"
             android:text="Recommended instructors"
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
 
         <ImageView
             android:id="@+id/imageView85"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="23dp"
+            android:layout_marginTop="36dp"
             android:src="@drawable/kkk"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -277,11 +287,18 @@
             android:id="@+id/searchView"
             android:layout_width="219dp"
             android:layout_height="35dp"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/editted_background_2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton23" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="229dp" />
 
         <ImageView
             android:id="@+id/imageView37"
@@ -311,11 +328,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="37dp"
             android:background="@android:color/transparent"
+            android:onClick="onClickButton5"
             android:src="@drawable/not_act_doc"
             app:layout_constraintBottom_toBottomOf="@+id/imageView37"
             app:layout_constraintStart_toEndOf="@+id/imageButton13"
             app:layout_constraintTop_toTopOf="@+id/imageView37"
-            android:onClick="onClickButton5"/>
+            tools:ignore="TouchTargetSizeCheck" />
 
         <ImageButton
             android:id="@+id/imageButton18"
