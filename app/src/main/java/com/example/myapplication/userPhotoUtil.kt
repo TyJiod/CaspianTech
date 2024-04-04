@@ -17,7 +17,7 @@ class UserPhotoUtil {
 
     fun loadUserPhoto(imageButton: ImageButton) {
         val placeHolderImage = R.drawable.user
-        // Проверяем, что база данных Firebase и URL-адрес не являются null
+
         databaseReference?.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val profilePictureUrl = snapshot.child("profilePictureUrl").getValue(String::class.java)
