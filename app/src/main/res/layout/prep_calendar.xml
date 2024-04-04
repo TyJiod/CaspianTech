@@ -161,13 +161,13 @@
 
     <TextView
         android:id="@+id/textView47"
-        android:layout_width="123dp"
-        android:layout_height="47dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="90dp"
         android:fontFamily="@font/open_sans_semibold"
         android:text="Set the time"
         android:textColor="#000000"
-        android:textSize="21dp"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -187,21 +187,25 @@
         <CalendarView
             android:id="@+id/calendarView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="#F4F4F4" />
 
     </RelativeLayout>
 
     <Button
         android:id="@+id/SaveButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SAVE"
+        android:layout_height="41dp"
+        android:background="@drawable/editted_button"
+        android:text="Save"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.848" />
+        app:layout_constraintTop_toBottomOf="@+id/button17"
+        app:layout_constraintVertical_bias="0.177" />
+
     <ImageView
         android:id="@+id/imageView37"
         android:layout_width="wrap_content"

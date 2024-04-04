@@ -84,6 +84,10 @@
             android:exported="false" />
 
         <activity
+            android:name=".teacher_c1"
+            android:exported="false" />
+
+        <activity
             android:name=".user_doc"
             android:exported="false" />
 

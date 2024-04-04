@@ -29,10 +29,10 @@
             android:layout_marginTop="18dp"
             android:layout_marginEnd="12dp"
             android:background="@android:color/transparent"
+            android:onClick="onClickButton3"
             android:src="@drawable/user"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="onClickButton3"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView38"
@@ -96,6 +96,7 @@
                     android:id="@+id/imageView3"
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
+                    android:onClick="onClickButtonc1"
                     android:src="@drawable/c1" />
 
             </LinearLayout>
@@ -131,10 +132,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:onClick="onClickButtonBagytova"
+            android:src="@drawable/foto_1"
             app:layout_constraintBottom_toBottomOf="@+id/imageView85"
             app:layout_constraintStart_toStartOf="@+id/imageView85"
-            app:layout_constraintTop_toTopOf="@+id/imageView85"
-            android:src="@drawable/foto_1" />
+            app:layout_constraintTop_toTopOf="@+id/imageView85" />
 
         <TextView
             android:id="@+id/textView40"
@@ -166,10 +167,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
+            android:src="@drawable/rate_1"
             app:layout_constraintBottom_toBottomOf="@+id/imageView85"
             app:layout_constraintStart_toEndOf="@+id/imageView86"
-            app:layout_constraintTop_toBottomOf="@+id/textView41"
-            android:src="@drawable/rate_1" />
+            app:layout_constraintTop_toBottomOf="@+id/textView41" />
 
         <ImageView
             android:id="@+id/imageView88"
@@ -187,10 +188,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:onClick="onClickButtonLyan"
+            android:src="@drawable/foto_2"
             app:layout_constraintBottom_toBottomOf="@+id/imageView88"
             app:layout_constraintStart_toStartOf="@+id/imageView88"
-            app:layout_constraintTop_toTopOf="@+id/imageView88"
-            android:src="@drawable/foto_2" />
+            app:layout_constraintTop_toTopOf="@+id/imageView88" />
 
         <TextView
             android:id="@+id/textView42"
@@ -222,10 +223,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
+            android:src="@drawable/rate_2"
             app:layout_constraintBottom_toBottomOf="@+id/imageView88"
             app:layout_constraintStart_toEndOf="@+id/imageView89"
-            app:layout_constraintTop_toBottomOf="@+id/textView43"
-            android:src="@drawable/rate_2" />
+            app:layout_constraintTop_toBottomOf="@+id/textView43" />
 
         <ImageView
             android:id="@+id/imageView91"
@@ -243,10 +244,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:onClick="onClickButtonAyap"
+            android:src="@drawable/foto_3"
             app:layout_constraintBottom_toBottomOf="@+id/imageView91"
             app:layout_constraintStart_toStartOf="@+id/imageView91"
-            app:layout_constraintTop_toTopOf="@+id/imageView91"
-            android:src="@drawable/foto_3" />
+            app:layout_constraintTop_toTopOf="@+id/imageView91" />
 
         <TextView
             android:id="@+id/textView44"
@@ -278,27 +279,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
+            android:src="@drawable/rate_3"
             app:layout_constraintBottom_toBottomOf="@+id/imageView91"
             app:layout_constraintStart_toEndOf="@+id/imageView92"
-            app:layout_constraintTop_toBottomOf="@+id/textView45"
-            android:src="@drawable/rate_3" />
+            app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <SearchView
             android:id="@+id/searchView"
-            android:layout_width="219dp"
+            android:layout_width="300dp"
             android:layout_height="35dp"
-            android:layout_marginStart="36dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/editted_background_2"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="Search here ..."
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton23" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="229dp" />
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/materialCardView"/>
 
         <ImageView
             android:id="@+id/imageView37"
@@ -316,11 +334,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="31dp"
             android:background="@android:color/transparent"
+            android:onClick="onClickButton4"
             android:src="@drawable/not_act_home"
             app:layout_constraintBottom_toBottomOf="@+id/imageView37"
             app:layout_constraintStart_toStartOf="@+id/imageView37"
-            app:layout_constraintTop_toTopOf="@+id/imageView37"
-            android:onClick="onClickButton4"/>
+            app:layout_constraintTop_toTopOf="@+id/imageView37" />
 
         <ImageButton
             android:id="@+id/imageButton16"
@@ -341,11 +359,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="37dp"
             android:background="@android:color/transparent"
+            android:onClick="onClickButton6"
             android:src="@drawable/not_act_meet"
             app:layout_constraintBottom_toBottomOf="@+id/imageView37"
             app:layout_constraintStart_toEndOf="@+id/imageButton16"
-            app:layout_constraintTop_toTopOf="@+id/imageView37"
-            android:onClick="onClickButton6"/>
+            app:layout_constraintTop_toTopOf="@+id/imageView37" />
 
         <ImageButton
             android:id="@+id/imageButton19"
@@ -353,11 +371,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="33dp"
             android:background="@android:color/transparent"
+            android:onClick="onClickButton7"
             android:src="@drawable/act_status"
             app:layout_constraintBottom_toBottomOf="@+id/imageView37"
             app:layout_constraintStart_toEndOf="@+id/imageButton18"
-            app:layout_constraintTop_toTopOf="@+id/imageView37"
-            android:onClick="onClickButton7"/>
+            app:layout_constraintTop_toTopOf="@+id/imageView37" />
 
         <ImageButton
             android:id="@+id/imageButton20"
@@ -365,11 +383,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:background="@android:color/transparent"
+            android:onClick="onClickButton8"
             android:src="@drawable/not_act_user"
             app:layout_constraintBottom_toBottomOf="@+id/imageView37"
             app:layout_constraintStart_toEndOf="@+id/imageButton19"
-            app:layout_constraintTop_toTopOf="@+id/imageView37"
-            android:onClick="onClickButton8"/>
+            app:layout_constraintTop_toTopOf="@+id/imageView37" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

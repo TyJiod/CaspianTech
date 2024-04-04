@@ -6,13 +6,25 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imageView77"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/ellipse_90"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/circle_5" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:onClick="onClickButtonBack"
+        android:src="@drawable/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView15"
@@ -23,17 +35,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/ihsanova" />
-
-    <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="22dp"
-        android:onClick="onClickButtonBack"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/white" />
 
     <TextView
         android:id="@+id/textView20"
@@ -74,8 +75,8 @@
         android:id="@+id/textView92"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/work_sans"
         android:text="About instructor"
         android:textColor="#AE3EB1"
@@ -87,11 +88,11 @@
         android:id="@+id/textView93"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:fontFamily="@font/open_sans"
-        android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit \nturpis suscipit aliquet nibh nam accumsan. Hac ligula \nnetus ullamcorper suspendisse nunc senectus conubia \nsodales facilisis arcu eu molestie sollicitudin, ad fusce non \ntempus luctus finibus scelerisque sit vestibulum ante \npretium. Id aliquet dapibus curae cursus nulla risus \nhendrerit fusce curabitur rutrum non auctor molestie \nultricies a efficitur taciti."
+        android:text="Ms. Ihsanova, an ardent advocate for the English language \nand a dedicated educator who believes in the \ntransformative power of communication. With over 10 \nyears of teaching experience, Ms. Ihsanova has honed her \ncraft to create an immersive and engaging learning \nenvironment where students learn the intricacies of \nEnglish. Ms. Ihsanova's commitment to fostering linguistic \ndiversity and promoting effective communication skills \nhas earned her recognition."
         android:textColor="#868686"
-        android:textSize="12sp"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView92" />
 
@@ -99,7 +100,7 @@
         android:id="@+id/textView94"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/work_sans"
         android:text="Experience"
@@ -112,11 +113,11 @@
         android:id="@+id/textView95"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:fontFamily="@font/open_sans"
-        android:text="Quis elementum porttitor porta aptent eu a lacinia mus \nante, hac phasellus fringilla facilisis et taciti donec \ninterdum. Vel vehicula platea duis at vestibulum ex \nefficitur ultrices eleifend, tristique lacinia nascetur primis \nelit convallis rhoncus vivamus. Dapibus arcu massa \ninterdum vitae eget mattis gravida, per morbi fusce in \nproin."
+        android:text="Ms.Ihsanova holds a Master's degree in English Linguistics \nand has taught English as a Third Language in a variety of \neducational settings, including public schools, language \ninstitutes, and community centers. She has designed and \nimplemented comprehensive language programs tailored \nto the needs of diverse learners, ranging from beginners \nto advanced speakers."
         android:textColor="#868686"
-        android:textSize="12sp"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView94" />
 
@@ -124,15 +125,16 @@
         android:id="@+id/button"
         android:layout_width="189dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/editted_button"
         android:fontFamily="@font/open_sans_bold"
+        android:onClick="ChooseTheInstructor"
         android:text="Choose the instructor"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView37"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView95" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView37"

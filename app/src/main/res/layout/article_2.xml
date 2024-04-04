@@ -6,23 +6,24 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView151"
+        android:id="@+id/imageView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/kaz" />
+        android:src="@drawable/rect_kaz" />
 
     <ImageView
         android:id="@+id/imageView154"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="15dp"
         android:src="@drawable/tag_33"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView151" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView34" />
 
     <ImageButton
         android:id="@+id/imageButton7"
@@ -40,12 +41,12 @@
         android:id="@+id/textView80"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/work_sans"
-        android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit vitae \net mi ultrices rhoncus duis, sem sodales risus nunc \ninceptos ligula platea velit nec tincidunt pellentesque \nmagnis. Dignissim ultrices egestas dui nisl ad litora semper \nex torquent vestibulum sociosqu venenatis proin, ultricies \neget ac est ut vivamus aliquam magna nulla phasellus \nelementum. Interdum himenaeos pellentesque platea netus \nprimis penatibus tortor maximus, quisque aliquet proin \nsapien sodales mi."
+        android:text="We are excited to announce the opening of grant \nopportunities here at Apec PetroTechnic. These grants \nprovide financial assistance to eligible students, helping to \nalleviate the burden of educational expenses and fostering \nacademic success. Whether you're pursuing a degree in the \nsciences or any other field, these grants aim to support your \neducational journey."
         android:textColor="#000000"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView82" />
 
@@ -85,42 +86,28 @@
         app:layout_constraintTop_toBottomOf="@+id/textView81" />
 
     <TextView
-        android:id="@+id/textView88"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:fontFamily="@font/work_sans"
-        android:text="Mi facilisi pharetra interdum montes eu leo ultricies \nrhoncus, iaculis accumsan quam scelerisque lacinia aliquam \nlectus, vehicula inceptos penatibus massa gravida mattis \npotenti. Habitasse risus nulla turpis accumsan odio curae \nfermentum id lacus posuere felis, dignissim sem leo taciti \nconsequat mus vestibulum in nibh. Praesent porta vitae \naenean rutrum potenti porttitor netus magna efficitur amet \nquam, diam nostra ad integer sit lobortis commodo iaculis \nfacilisi aliquet."
-        android:textColor="#000000"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView87" />
-
-    <TextView
         android:id="@+id/textView89"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="381dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/work_sans"
-        android:text="Risus cursus pretium quis ridiculus lectus aliquam nibh eu \npharetra, porta nisl posuere viverra ad sem augue. Vivamus \ndictumst suspendisse purus eleifend vitae justo ex iaculis \ntristique mollis, cursus aliquam dolor netus montes ultrices \nmi odio nibh. Ante ultricies pharetra magna et enim morbi \nparturient dictum iaculis maximus a ut, nisi imperdiet orci \nper ac auctor primis ad habitasse est bibendum."
+        android:text="Don't miss out this valuable opportunity to receive \nfinancial assistance and propel your academic journey \nforward. Apply for the grants today and unlock new \npossibilities at Apec PetroTechnic!"
         android:textColor="#000000"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView88" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView87"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/work_sans"
-        android:text="At dictumst cursus elit odio bibendum proin nec duis eget \nmetus, elementum luctus id ad nascetur et nunc potenti. \nQuis tortor iaculis sociosqu phasellus morbi congue natoque \nmagna nunc viverra et arcu dui, nibh ante nec efficitur \na suscipit feugiat himenaeos volutpat pharetra litora nascetur. \nLitora varius sem suspendisse convallis enim quisque \nnatoque curae, pretium turpis tristique proin per bibendum. \nDictum vitae platea felis potenti viverra ac primis diam ante, \nnam proin senectus sodales volutpat class varius mauris."
+        android:text="All registered students of Apec PetroTechnic are eligible to \napply for these grants. The application period opens on 15 \nJune, allowing ample time for preparation and submission. \nVarious grant categories are available to cater to different \nneeds and academic pursuits. Interested students can \naccess the application form through the official website or \nvisit the college for assistance. Grants will be awarded \nbased on academic merit, financial need, and other relevant \ncriteria outlined in the application guidelines. The deadline \nfor submission is 15 August to be considered for these \ngrants."
         android:textColor="#000000"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView80" />
 
@@ -198,12 +185,26 @@
         android:id="@+id/textView90"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="23dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="30dp"
         android:fontFamily="@font/open_sans"
-        android:text="A representative of KazMunayGas \nwill come to the seminar."
+        android:text="A representative of KazMunayGas will \ncome to the seminar."
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView151"
-        app:layout_constraintStart_toStartOf="@+id/imageView151" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView34"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/work_sans"
+        android:text="If you have any questions or require assistance throughout \nthe application process, don't hesitate to reach out to the \nAccounting office at Apec PetroTechnic college. Our \ndedicated team is here to support you every step of the way."
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView87" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

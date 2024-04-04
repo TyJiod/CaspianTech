@@ -5,25 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="189dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/editted_button"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="Choose the instructor"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imageView77"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/circle_5"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/ellipse_90"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,12 +19,27 @@
         android:id="@+id/imageView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
         android:onClick="onClickButtonBack"
         android:src="@drawable/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/editted_button"
+        android:fontFamily="@font/open_sans_bold"
+        android:onClick="ChooseTheInstructor"
+        android:text="Choose the instructor"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView37"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView63"
@@ -88,8 +90,8 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/work_sans"
         android:text="About instructor"
         android:textColor="#AE3EB1"
@@ -101,11 +103,11 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:fontFamily="@font/open_sans"
-        android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit \nturpis suscipit aliquet nibh nam accumsan. Hac ligula \nnetus ullamcorper suspendisse nunc senectus conubia \nsodales facilisis arcu eu molestie sollicitudin, ad fusce non \ntempus luctus finibus scelerisque sit vestibulum ante \npretium. Id aliquet dapibus curae cursus nulla risus \nhendrerit fusce curabitur rutrum non auctor molestie \nultricies a efficitur taciti."
+        android:text="Ms. Sarzhanova, an enthusiastic and dedicated English \nlanguage teacher who is passionate about helping \nstudents achieve their language learning goals. With a \nBachelor's degree in English Literature and years of \nexperience teaching English as a Third Language in \ndiverse educational settings, Ms. Sarzhanova brings a \nwealth of knowledge and expertise to her students."
         android:textColor="#868686"
-        android:textSize="12sp"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -113,24 +115,24 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/work_sans"
         android:text="Experience"
         android:textColor="#AE3EB1"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintTop_toBottomOf="@+id/textView15"/>
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:fontFamily="@font/open_sans"
-        android:text="Quis elementum porttitor porta aptent eu a lacinia mus \nante, hac phasellus fringilla facilisis et taciti donec \ninterdum. Vel vehicula platea duis at vestibulum ex \nefficitur ultrices eleifend, tristique lacinia nascetur primis \nelit convallis rhoncus vivamus. Dapibus arcu massa \ninterdum vitae eget mattis gravida, per morbi fusce in \nproin."
+        android:text="Ms. Sarzhanova's teaching career began in her home \ncountry, where she taught English as a Foreign Language \nto secondary school students. She then pursued further \nstudies in English Literature and gained experience \nteaching in international contexts, including language \ninstitutes, universities, and community colleges. She is \ndedicated to helping her students achieve language \nproficiency and succeed in their academic and \nprofessional endeavors."
         android:textColor="#868686"
-        android:textSize="12sp"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
