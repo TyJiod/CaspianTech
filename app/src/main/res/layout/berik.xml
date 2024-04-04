@@ -6,10 +6,11 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imageView77"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/circle_5"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/ellipse_90"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -18,8 +19,8 @@
         android:id="@+id/imageView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
         android:onClick="onClickButtonBack"
         android:src="@drawable/white"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,10 +31,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="69dp"
+        android:src="@drawable/berik"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView7"
-        android:src="@drawable/berik" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView101"
@@ -74,8 +75,8 @@
         android:id="@+id/textView104"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/work_sans"
         android:text="About instructor"
         android:textColor="#AE3EB1"
@@ -87,11 +88,11 @@
         android:id="@+id/textView105"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:fontFamily="@font/open_sans"
-        android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit \nturpis suscipit aliquet nibh nam accumsan. Hac ligula \nnetus ullamcorper suspendisse nunc senectus conubia \nsodales facilisis arcu eu molestie sollicitudin, ad fusce non \ntempus luctus finibus scelerisque sit vestibulum ante \npretium. Id aliquet dapibus curae cursus nulla risus \nhendrerit fusce curabitur rutrum non auctor molestie \nultricies a efficitur taciti."
+        android:text="Ms. Berik, a dynamic and innovative English language \neducator committed to fostering language proficiency and \ncultural competence in her students. With a Bachelor's \ndegree in English Education and years of experience \nteaching English as a Third Language in multicultural \nenvironments, Ms. Berik brings a unique blend of \npedagogical expertise and cultural sensitivity to her \nclassroom."
         android:textColor="#868686"
-        android:textSize="12sp"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView104" />
 
@@ -99,7 +100,7 @@
         android:id="@+id/textView106"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/work_sans"
         android:text="Experience"
@@ -112,10 +113,10 @@
         android:id="@+id/textView107"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Quis elementum porttitor porta aptent eu a lacinia mus \nante, hac phasellus fringilla facilisis et taciti donec \ninterdum. Vel vehicula platea duis at vestibulum ex \nefficitur ultrices eleifend, tristique lacinia nascetur primis \nelit convallis rhoncus vivamus. Dapibus arcu massa \ninterdum vitae eget mattis gravida, per morbi fusce in \nproin."
+        android:layout_marginStart="24dp"
+        android:text="Ms. Berik's passion for language teaching led her to \npursue a career in ESL education, where she has worked \nwith students from diverse linguistic and cultural \nbackgrounds. She has taught English language learners of \nall ages, from young learners to adult professionals, in a \nvariety of educational settings, including language \ninstitutes, community colleges, and international schools."
         android:textColor="#868686"
-        android:textSize="12sp"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView106" />
 
@@ -123,15 +124,16 @@
         android:id="@+id/button"
         android:layout_width="189dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/editted_button"
         android:fontFamily="@font/open_sans_bold"
+        android:onClick="ChooseTheInstructor"
         android:text="Choose the instructor"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView37"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView107" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView37"

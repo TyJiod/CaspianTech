@@ -4,14 +4,37 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.ListView
 import androidx.activity.ComponentActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.search.SearchBar
+import com.google.android.material.search.SearchView
 
 class prep_teacher : ComponentActivity() {
-    @SuppressLint("MissingInflatedId")
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var searchView: SearchView
+    private var mList = ArrayList<TeacherData>()
+    private lateinit var adapter: TeacherAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.prep_teacher)
+
+        recyclerView = findViewById(R.id.recyclerView)
+        searchView = findViewById(R.id.searchView)
+
+
+        recyclerView.setHasFixedSize(true)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        addDataToList()
+        adapter = TeacherAdapter(mList)
+        recyclerView.adapter = adapter
     }
+
+    private fun addDataToList(){
+        mList.add(TeacherData("Java"))
+    }
+
     fun onClickButton2(view: View) {
         startActivity(Intent(this, user_notify::class.java))
     }
@@ -54,6 +77,10 @@ class prep_teacher : ComponentActivity() {
 
     fun onClickButtonb2(view: View) {
         startActivity(Intent(this, teacher_b2::class.java))
+    }
+
+    fun onClickButtonc1(view: View) {
+        startActivity(Intent(this, teacher_c1::class.java))
     }
 
     fun onClickButtonBagytova(view: View) {

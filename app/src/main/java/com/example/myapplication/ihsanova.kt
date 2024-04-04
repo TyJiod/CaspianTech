@@ -6,11 +6,12 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.ComponentActivity
 
+@Suppress("DEPRECATION")
 class ihsanova : ComponentActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout)
+        setContentView(R.layout.ihsanova)
     }
 
     fun onClickButton4(view: View) {
@@ -34,7 +35,10 @@ class ihsanova : ComponentActivity() {
     }
 
     fun onClickButtonBack(view: View) {
-        startActivity(Intent(this, teacher_a1::class.java))
+        onBackPressed()
     }
 
+    fun ChooseTheInstructor(view: View) {
+        startActivity(Intent(this, prep_calendar::class.java))
+    }
 }

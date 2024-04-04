@@ -6,10 +6,11 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imageView77"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/circle_5"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/ellipse_90"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -18,8 +19,8 @@
         android:id="@+id/imageView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
         android:onClick="onClickButtonBack"
         android:src="@drawable/white"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,8 +75,8 @@
         android:id="@+id/textView98"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/work_sans"
         android:text="About instructor"
         android:textColor="#AE3EB1"
@@ -87,11 +88,11 @@
         android:id="@+id/textView99"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:fontFamily="@font/open_sans"
-        android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit \nturpis suscipit aliquet nibh nam accumsan. Hac ligula \nnetus ullamcorper suspendisse nunc senectus conubia \nsodales facilisis arcu eu molestie sollicitudin, ad fusce non \ntempus luctus finibus scelerisque sit vestibulum ante \npretium. Id aliquet dapibus curae cursus nulla risus \nhendrerit fusce curabitur rutrum non auctor molestie \nultricies a efficitur taciti."
+        android:text="Ms. Sultangaliyeva, a passionate English language teacher \nwhose enthusiasm for language acquisition and cultural \nexchange knows no bounds. With a Master's degree in \nTeaching English as a Foreign Language and years of \nexperience teaching abroad, Ms. Sultangaliyeva brings a \nwealth of knowledge and expertise to her students. Ms. \nSultangaliyeva's classes are characterized by interactive \nactivities and real-world language use, empowering \nstudents to communicate confidently in English."
         android:textColor="#868686"
-        android:textSize="12sp"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView98" />
 
@@ -99,7 +100,7 @@
         android:id="@+id/textView100"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/work_sans"
         android:text="Experience"
@@ -112,11 +113,11 @@
         android:id="@+id/textView102"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:fontFamily="@font/open_sans"
-        android:text="Quis elementum porttitor porta aptent eu a lacinia mus \nante, hac phasellus fringilla facilisis et taciti donec \ninterdum. Vel vehicula platea duis at vestibulum ex \nefficitur ultrices eleifend, tristique lacinia nascetur primis \nelit convallis rhoncus vivamus. Dapibus arcu massa \ninterdum vitae eget mattis gravida, per morbi fusce in \nproin."
+        android:text="Ms. Sultangaliyeva's experience teaching English as a \nForeign Language has equipped her with a deep \nunderstanding of the challenges and opportunities that \nlanguage learners face, allowing her to tailor her \ninstructional approach to meet the diverse needs of her \nstudents."
         android:textColor="#868686"
-        android:textSize="12sp"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView100" />
 
@@ -124,15 +125,16 @@
         android:id="@+id/button"
         android:layout_width="189dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/editted_button"
         android:fontFamily="@font/open_sans_bold"
+        android:onClick="ChooseTheInstructor"
         android:text="Choose the instructor"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView37"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView102" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView37"

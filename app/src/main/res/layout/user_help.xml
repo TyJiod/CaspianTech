@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/open_sans_semibold"
         android:text="Get help"
         android:textColor="#000000"
@@ -43,174 +43,224 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton23" />
 
     <ImageView
-        android:id="@+id/imageView69"
+        android:id="@+id/imageView70"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="19dp"
-        android:src="@drawable/rrr"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/purple_q"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/work_sans_medium"
+        android:text="The documents I attached will not be \npublicly available?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView70"
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <TextView
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/work_sans_medium"
-        android:text="The documents I attached will not be \npublicly available?"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView69"
-        app:layout_constraintEnd_toEndOf="@+id/imageView69"
-        app:layout_constraintStart_toStartOf="@+id/imageView69"
-        app:layout_constraintTop_toTopOf="@+id/imageView69" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/subtract"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView69"
-        app:layout_constraintEnd_toEndOf="@+id/imageView69"
-        app:layout_constraintStart_toStartOf="@+id/imageView69" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/work_sans"
+        android:text="No, we don't post documents of our \napplicants. All needed documents stays only \nin the college."
+        android:textColor="#868686"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView70"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <ImageView
-        android:id="@+id/imageView70"
+        android:id="@+id/imageView119"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/rrr"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/line"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView69" />
-
-    <TextView
-        android:id="@+id/textView32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:fontFamily="@font/work_sans_medium"
-        android:text="I chose an online interview, can I \nchange it to offline?"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView70"
-        app:layout_constraintStart_toStartOf="@+id/imageView70"
-        app:layout_constraintTop_toTopOf="@+id/imageView70" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/subtract"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView70"
-        app:layout_constraintEnd_toEndOf="@+id/imageView70"
-        app:layout_constraintStart_toStartOf="@+id/imageView70" />
-
-    <ImageView
-        android:id="@+id/imageView71"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/rrr"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView70" />
-
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:fontFamily="@font/work_sans_medium"
-        android:text="What should I do if the Google meet \ncode doesn't work?"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView71"
-        app:layout_constraintStart_toStartOf="@+id/imageView71"
-        app:layout_constraintTop_toTopOf="@+id/imageView71" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/subtract"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView71"
-        app:layout_constraintEnd_toEndOf="@+id/imageView71"
-        app:layout_constraintStart_toStartOf="@+id/imageView71" />
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
     <ImageView
         android:id="@+id/imageView72"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/rrr"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/purple_q"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView119" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/work_sans_medium"
+        android:text="I chose an online interview, can I \nchange it to offline?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView72"
+        app:layout_constraintTop_toBottomOf="@+id/imageView119" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/work_sans"
+        android:text="Unfortunately, we don't allow this because \ninstructors are preparing immediately after \nthe applicant booked the interview format."
+        android:textColor="#868686"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView72"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <ImageView
+        android:id="@+id/imageView121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView71" />
+        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        android:src="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView94"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/purple_q"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView121" />
 
     <TextView
         android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/work_sans_medium"
-        android:text="Can I change the interview date and \ntime?"
+        android:text="What should I do if the Google meet \ncode doesn't work?"
         android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView72"
-        app:layout_constraintStart_toStartOf="@+id/imageView72"
-        app:layout_constraintTop_toTopOf="@+id/imageView72" />
-
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/subtract"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView72"
-        app:layout_constraintEnd_toEndOf="@+id/imageView72"
-        app:layout_constraintStart_toStartOf="@+id/imageView72" />
-
-    <ImageView
-        android:id="@+id/imageView73"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/rrr"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView72" />
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView94"
+        app:layout_constraintTop_toBottomOf="@+id/imageView121" />
 
     <TextView
         android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/work_sans"
+        android:text="Probably the internet connection is poor or \nthe code isn't relevant anymore."
+        android:textColor="#868686"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView94"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <ImageView
+        android:id="@+id/imageView123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35"
+        android:src="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/purple_q"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView123" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/work_sans_medium"
+        android:text="Can I change the interview date and \ntime?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView99"
+        app:layout_constraintTop_toBottomOf="@+id/imageView123" />
+
+    <TextView
+        android:id="@+id/textView88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/work_sans"
+        android:text="Yes, you can change the date and time of \nyour interview until the beginning of your \ninterview."
+        android:textColor="#868686"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView99"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    <ImageView
+        android:id="@+id/imageView125"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView88"
+        android:src="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView151"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView125"
+        android:src="@drawable/purple_q" />
+
+    <TextView
+        android:id="@+id/textView164"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/work_sans_medium"
         android:text="Will I be able to retake the interview \nif I had personal circumstances that \nday?"
         android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView73"
-        app:layout_constraintStart_toStartOf="@+id/imageView73"
-        app:layout_constraintTop_toTopOf="@+id/imageView73" />
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView151"
+        app:layout_constraintTop_toBottomOf="@+id/imageView125" />
 
-    <ImageButton
-        android:id="@+id/imageButton6"
+    <TextView
+        android:id="@+id/textView165"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/subtract"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView73"
-        app:layout_constraintEnd_toEndOf="@+id/imageView73"
-        app:layout_constraintStart_toStartOf="@+id/imageView73" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/work_sans"
+        android:text="In that case, the college won't apply you, the \napplicant must come at the estimated date."
+        android:textColor="#868686"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView151"
+        app:layout_constraintTop_toBottomOf="@+id/textView164" />
 
     <ImageView
         android:id="@+id/imageView37"
@@ -228,11 +278,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
         android:background="@android:color/transparent"
+        android:onClick="onClickButton4"
         android:src="@drawable/not_act_home"
         app:layout_constraintBottom_toBottomOf="@+id/imageView37"
         app:layout_constraintStart_toStartOf="@+id/imageView37"
-        app:layout_constraintTop_toTopOf="@+id/imageView37"
-        android:onClick="onClickButton4"/>
+        app:layout_constraintTop_toTopOf="@+id/imageView37" />
 
     <ImageButton
         android:id="@+id/imageButton16"
@@ -240,11 +290,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
         android:background="@android:color/transparent"
+        android:onClick="onClickButton5"
         android:src="@drawable/not_act_doc"
         app:layout_constraintBottom_toBottomOf="@+id/imageView37"
         app:layout_constraintStart_toEndOf="@+id/imageButton13"
-        app:layout_constraintTop_toTopOf="@+id/imageView37"
-        android:onClick="onClickButton5"/>
+        app:layout_constraintTop_toTopOf="@+id/imageView37" />
 
     <ImageButton
         android:id="@+id/imageButton18"
@@ -252,11 +302,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
         android:background="@android:color/transparent"
+        android:onClick="onClickButton6"
         android:src="@drawable/not_act_meet"
         app:layout_constraintBottom_toBottomOf="@+id/imageView37"
         app:layout_constraintStart_toEndOf="@+id/imageButton16"
-        app:layout_constraintTop_toTopOf="@+id/imageView37"
-        android:onClick="onClickButton6"/>
+        app:layout_constraintTop_toTopOf="@+id/imageView37" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -264,11 +314,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
         android:background="@android:color/transparent"
+        android:onClick="onClickButton7"
         android:src="@drawable/not_act_status"
         app:layout_constraintBottom_toBottomOf="@+id/imageView37"
         app:layout_constraintStart_toEndOf="@+id/imageButton18"
-        app:layout_constraintTop_toTopOf="@+id/imageView37"
-        android:onClick="onClickButton7"/>
+        app:layout_constraintTop_toTopOf="@+id/imageView37" />
 
     <ImageButton
         android:id="@+id/imageButton22"
@@ -276,10 +326,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:background="@android:color/transparent"
+        android:onClick="onClickButton8"
         android:src="@drawable/act_user"
         app:layout_constraintBottom_toBottomOf="@+id/imageView37"
         app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="@+id/imageView37"
-        android:onClick="onClickButton8"/>
+        app:layout_constraintTop_toTopOf="@+id/imageView37" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.ComponentActivity
 
+@Suppress("DEPRECATION")
 class yerzhanova : ComponentActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,7 +35,10 @@ class yerzhanova : ComponentActivity() {
     }
 
     fun onClickButtonBack(view: View) {
-        startActivity(Intent(this, teacher_b1::class.java))
+        onBackPressed()
     }
 
+    fun ChooseTheInstructor(view: View) {
+        startActivity(Intent(this, prep_calendar::class.java))
+    }
 }

@@ -6,46 +6,59 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView108"
+        android:id="@+id/imageView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/rect_apec"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/apec" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClickButtonExit"
+        android:src="@drawable/cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/open_sans"
+        android:text="The higher college Apec PetroTechnic \nincreased grant places"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView155"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="15dp"
         android:src="@drawable/tag_1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView108" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <ImageView
         android:id="@+id/imageView156"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="11dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/tag_2"
         app:layout_constraintStart_toEndOf="@+id/imageView155"
-        app:layout_constraintTop_toBottomOf="@+id/imageView108"
-        android:src="@drawable/tag_2" />
-
-    <TextView
-        android:id="@+id/textView77"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginBottom="23dp"
-        android:fontFamily="@font/open_sans"
-        android:text="The higher college Apec \nPetroTechnic increased grant \nplaces"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView108"
-        app:layout_constraintStart_toStartOf="@+id/imageView108" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <ImageView
         android:id="@+id/imageView153"
@@ -86,12 +99,12 @@
         android:id="@+id/textView83"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/work_sans"
-        android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit vitae \net mi ultrices rhoncus duis, sem sodales risus nunc \ninceptos ligula platea velit nec tincidunt pellentesque \nmagnis. Dignissim ultrices egestas dui nisl ad litora semper \nex torquent vestibulum sociosqu venenatis proin, ultricies \neget ac est ut vivamus aliquam magna nulla phasellus \nelementum. Interdum himenaeos pellentesque platea netus \nprimis penatibus tortor maximus, quisque aliquet proin \nsapien sodales mi."
+        android:text="In an effort to bridge the gap between academia and \nindustry, Apec PetroTechnic is excited to announce the \nupcoming participation of a distinguished representative \nfrom KazMunayGas in an enlightening seminar scheduled for \nJune 7."
         android:textColor="#000000"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView153" />
 
@@ -99,12 +112,12 @@
         android:id="@+id/textView85"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/work_sans"
-        android:text="Mi facilisi pharetra interdum montes eu leo ultricies \nrhoncus, iaculis accumsan quam scelerisque lacinia aliquam \nlectus, vehicula inceptos penatibus massa gravida mattis \npotenti. Habitasse risus nulla turpis accumsan odio curae \nfermentum id lacus posuere felis, dignissim sem leo taciti \nconsequat mus vestibulum in nibh. Praesent porta vitae \naenean rutrum potenti porttitor netus magna efficitur amet \nquam, diam nostra ad integer sit lobortis commodo iaculis \nfacilisi aliquet."
+        android:text="KazMunayGas, renowned for its innovation and leadership in \nthe oil production, will be represented by Askar \nKuanysbekov, a seasoned expert with years of experience in \noil drilling. Askar Kuanysbekov's presence underscores the \ncompany's commitment to nurturing talent and fostering \ncollaboration with educational institutions like Apec \nPetroTechnic."
         android:textColor="#000000"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView84" />
 
@@ -112,12 +125,12 @@
         android:id="@+id/textView86"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/work_sans"
-        android:text="Risus cursus pretium quis ridiculus lectus aliquam nibh eu \npharetra, porta nisl posuere viverra ad sem augue. Vivamus \ndictumst suspendisse purus eleifend vitae justo ex iaculis \ntristique mollis, cursus aliquam dolor netus montes ultrices \nmi odio nibh. Ante ultricies pharetra magna et enim morbi \nparturient dictum iaculis maximus a ut, nisi imperdiet orci \nper ac auctor primis ad habitasse est bibendum."
+        android:text="Students attending the seminar can look forward to Askar \nKuanysbekov's engaging presentation, which will delve into \n“How oil production affects our lives” and shed light on the \nlatest trends and opportunities in the industry."
         android:textColor="#000000"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView85" />
 
@@ -125,15 +138,27 @@
         android:id="@+id/textView84"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/work_sans"
-        android:text="At dictumst cursus elit odio bibendum proin nec duis eget \nmetus, elementum luctus id ad nascetur et nunc potenti. \nQuis tortor iaculis sociosqu phasellus morbi congue natoque \nmagna nunc viverra et arcu dui, nibh ante nec efficitur \na suscipit feugiat himenaeos volutpat pharetra litora nascetur. \nLitora varius sem suspendisse convallis enim quisque \nnatoque curae, pretium turpis tristique proin per bibendum. \nDictum vitae platea felis potenti viverra ac primis diam ante, \nnam proin senectus sodales volutpat class varius mauris."
+        android:text="The seminar, themed around oil production, promises to \noffer students invaluable insights into the practical \napplications of their academic pursuits. Welcoming \nKazMunayGas' representative to this event not only enriches \nthe educational experience for students but also \nestablishes a meaningful connection between theoretical \nlearning and real-world industry practices."
         android:textColor="#000000"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/work_sans"
+        android:text="Apec PetroTechnic looks forward to welcoming Askar \nKuanysbekov and all attendees to what promises to be an \nenriching and enlightening seminar experience."
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView86" />
 
     <ImageView
         android:id="@+id/imageView157"
@@ -151,11 +176,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
         android:background="@android:color/transparent"
+        android:onClick="onClickButton4"
         android:src="@drawable/act_home"
         app:layout_constraintBottom_toBottomOf="@+id/imageView157"
         app:layout_constraintStart_toStartOf="@+id/imageView157"
-        app:layout_constraintTop_toTopOf="@+id/imageView157"
-        android:onClick="onClickButton4"/>
+        app:layout_constraintTop_toTopOf="@+id/imageView157" />
 
     <ImageButton
         android:id="@+id/imageButton11"
@@ -163,11 +188,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
         android:background="@android:color/transparent"
+        android:onClick="onClickButton5"
         android:src="@drawable/not_act_doc"
         app:layout_constraintBottom_toBottomOf="@+id/imageView157"
         app:layout_constraintStart_toEndOf="@+id/imageButton9"
-        app:layout_constraintTop_toTopOf="@+id/imageView157"
-        android:onClick="onClickButton5"/>
+        app:layout_constraintTop_toTopOf="@+id/imageView157" />
 
     <ImageButton
         android:id="@+id/imageButton12"
@@ -175,11 +200,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
         android:background="@android:color/transparent"
+        android:onClick="onClickButton6"
         android:src="@drawable/not_act_meet"
         app:layout_constraintBottom_toBottomOf="@+id/imageView157"
         app:layout_constraintStart_toEndOf="@+id/imageButton11"
-        app:layout_constraintTop_toTopOf="@+id/imageView157"
-        android:onClick="onClickButton6"/>
+        app:layout_constraintTop_toTopOf="@+id/imageView157" />
 
     <ImageButton
         android:id="@+id/imageButton14"
@@ -187,11 +212,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
         android:background="@android:color/transparent"
+        android:onClick="onClickButton7"
         android:src="@drawable/not_act_status"
         app:layout_constraintBottom_toBottomOf="@+id/imageView157"
         app:layout_constraintStart_toEndOf="@+id/imageButton12"
-        app:layout_constraintTop_toTopOf="@+id/imageView157"
-        android:onClick="onClickButton7"/>
+        app:layout_constraintTop_toTopOf="@+id/imageView157" />
 
     <ImageButton
         android:id="@+id/imageButton15"
@@ -199,22 +224,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
         android:background="@android:color/transparent"
+        android:onClick="onClickButton8"
         android:src="@drawable/not_act_user"
         app:layout_constraintBottom_toBottomOf="@+id/imageView157"
         app:layout_constraintStart_toEndOf="@+id/imageButton14"
-        app:layout_constraintTop_toTopOf="@+id/imageView157"
-        android:onClick="onClickButton8"/>
-
-    <ImageButton
-        android:id="@+id/imageButton17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="22dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/cancel"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="onClickButtonExit"/>
+        app:layout_constraintTop_toTopOf="@+id/imageView157" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
