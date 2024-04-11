@@ -20,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
 
-class HomePage : ComponentActivity() {
+class HomePage : ComponentActivity(){
 
     private lateinit var welcomeBackTextView: TextView
     private lateinit var firebaseAuth: FirebaseAuth
@@ -28,6 +28,8 @@ class HomePage : ComponentActivity() {
     private lateinit var currentUser: FirebaseUser
     private lateinit var databaseReference: DatabaseReference
     private lateinit var profileImageButton: ImageButton
+    private lateinit var interviewDateInfo: TextView
+    private lateinit var interviewTimeInfo: TextView
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +39,8 @@ class HomePage : ComponentActivity() {
         profileImageButton = findViewById(R.id.profileImageButton)
 
         welcomeBackTextView = findViewById(R.id.welcomeBackTextView)
+        interviewDateInfo = findViewById(R.id.interviewDateInfo)
+        interviewTimeInfo = findViewById(R.id.interviewTimeInfo)
 
         firebaseAuth = FirebaseAuth.getInstance()
         database = FirebaseDatabase.getInstance()
@@ -49,14 +53,42 @@ class HomePage : ComponentActivity() {
 
         userPhotoUtil.loadUserPhoto(profileImageButton)
 
+        databaseReference.child("userInterviewData").addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                if (snapshot.exists()) {
+                    val interviewDate = snapshot.child("userInterviewDate").getValue(String::class.java)
+                    val interviewTime = snapshot.child("userInterviewTime").getValue(String::class.java)
+
+                    if (interviewDate != null && interviewTime != null) {
+                        interviewDateInfo.text = "Intervew is due to, $interviewDate"
+                        interviewTimeInfo.text = "at $interviewTime"
+                    } else {
+                        interviewDateInfo.text = "No interview scheduled"
+                        interviewTimeInfo.text = ""
+                    }
+                } else {
+                    interviewDateInfo.text = "No interview scheduled"
+                    interviewTimeInfo.text = ""
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                // Обработка ошибок при чтении данных из базы данных
+                interviewDateInfo.text = "Error loading interview info"
+                interviewTimeInfo.text = ""
+            }
+        })
+
+        // Отображение приветственного сообщения
         databaseReference.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val userName = snapshot.child("name").getValue(String::class.java)
                 val welcomeMessage = "Welcome back, ${userName ?: "User"}"
                 welcomeBackTextView.text = welcomeMessage
-
             }
+
             override fun onCancelled(error: DatabaseError) {
+                // Обработка ошибок при чтении данных из базы данных
             }
         })
     }

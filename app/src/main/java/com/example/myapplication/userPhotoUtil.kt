@@ -26,7 +26,7 @@ class UserPhotoUtil {
                     Glide.with(imageButton.context)
                         .load(profilePictureUrl)
                         .circleCrop()
-                        .override(75,75)
+                        .override(100,100)
                         .encodeFormat(Bitmap.CompressFormat.JPEG) // Установка формата компрессии
                         .encodeQuality(80) // Установка качества компрессии (0 - 100)
                         .into(imageButton)
@@ -35,7 +35,7 @@ class UserPhotoUtil {
                     Glide.with(imageButton.context)
                         .load(placeHolderImage)
                         .circleCrop()
-                        .override(75,75)
+                        .override(100,100)
                         .encodeFormat(Bitmap.CompressFormat.JPEG) // Установка формата компрессии
                         .encodeQuality(80) // Установка качества компрессии (0 - 100)
                         .into(imageButton)

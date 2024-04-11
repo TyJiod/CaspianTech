@@ -26,14 +26,14 @@ class prep_teacher : ComponentActivity() {
 
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        addDataToList()
+//        addDataToList()
         adapter = TeacherAdapter(mList)
         recyclerView.adapter = adapter
     }
 
-    private fun addDataToList(){
-        mList.add(TeacherData("Java"))
-    }
+//    private fun addDataToList(){
+//        mList.add(TeacherData("Java"))
+//    }
 
     fun onClickButton2(view: View) {
         startActivity(Intent(this, user_notify::class.java))

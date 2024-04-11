@@ -19,7 +19,7 @@
         android:onClick="onClickButton2"/>
 
     <ImageButton
-        android:id="@+id/imageButton27"
+        android:id="@+id/profileImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
@@ -38,10 +38,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton27">
+        app:layout_constraintTop_toBottomOf="@+id/profileImageButton">
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/welcomeUserTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/open_sans_semibold"

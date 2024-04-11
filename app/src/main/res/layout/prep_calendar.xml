@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/selectTime10Am"
         android:layout_width="85dp"
         android:layout_height="48dp"
         android:layout_marginStart="4dp"
@@ -17,11 +17,11 @@
         android:text="10:00 AM"
         android:textColor="#000000"
         android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/button9"
+        app:layout_constraintStart_toEndOf="@+id/selectTime9Am"
         app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/selectTime11Am"
         android:layout_width="85dp"
         android:layout_height="48dp"
         android:layout_marginStart="4dp"
@@ -31,11 +31,11 @@
         android:text="11:00 AM"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/button10"
+        app:layout_constraintStart_toEndOf="@+id/selectTime10Am"
         app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/selectTime9Am"
         android:layout_width="85dp"
         android:layout_height="48dp"
         android:layout_marginStart="4dp"
@@ -45,11 +45,11 @@
         android:text="9:00 AM"
         android:textColor="#000000"
         android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintStart_toEndOf="@+id/selectTime8Am"
         app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/selectTime8Am"
         android:layout_width="85dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/selectTime12Am"
         android:layout_width="85dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
@@ -74,10 +74,10 @@
         android:textColorHint="#000000"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/selectTime8Am" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/selectTime13Am"
         android:layout_width="85dp"
         android:layout_height="48dp"
         android:layout_marginStart="4dp"
@@ -86,11 +86,11 @@
         android:fontFamily="@font/open_sans"
         android:text="13:00 PM"
         android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/button12"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintStart_toEndOf="@+id/selectTime12Am"
+        app:layout_constraintTop_toBottomOf="@+id/selectTime9Am" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/selectTime15Am"
         android:layout_width="85dp"
         android:layout_height="48dp"
         android:layout_marginStart="4dp"
@@ -100,11 +100,11 @@
         android:text="15:00 PM"
         android:textColor="#000000"
         android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/button14"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
+        app:layout_constraintStart_toEndOf="@+id/selectTime14Am"
+        app:layout_constraintTop_toBottomOf="@+id/selectTime11Am" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/selectTime14Am"
         android:layout_width="85dp"
         android:layout_height="48dp"
         android:layout_marginStart="4dp"
@@ -114,11 +114,11 @@
         android:text="14:00 PM"
         android:textColor="#000000"
         android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/button13"
-        app:layout_constraintTop_toBottomOf="@+id/button10" />
+        app:layout_constraintStart_toEndOf="@+id/selectTime13Am"
+        app:layout_constraintTop_toBottomOf="@+id/selectTime10Am" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/selectTime16Am"
         android:layout_width="85dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
@@ -129,10 +129,10 @@
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button12" />
+        app:layout_constraintTop_toBottomOf="@+id/selectTime12Am" />
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/selectTime18Am"
         android:layout_width="85dp"
         android:layout_height="48dp"
         android:layout_marginStart="4dp"
@@ -142,11 +142,11 @@
         android:text="18:00 PM"
         android:textColor="#000000"
         android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/button17"
-        app:layout_constraintTop_toBottomOf="@+id/button14" />
+        app:layout_constraintStart_toEndOf="@+id/selectTime17Am"
+        app:layout_constraintTop_toBottomOf="@+id/selectTime14Am" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/selectTime17Am"
         android:layout_width="85dp"
         android:layout_height="48dp"
         android:layout_marginStart="4dp"
@@ -156,8 +156,8 @@
         android:text="17:00 PM"
         android:textColor="#000000"
         android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/button16"
-        app:layout_constraintTop_toBottomOf="@+id/button13" />
+        app:layout_constraintStart_toEndOf="@+id/selectTime16Am"
+        app:layout_constraintTop_toBottomOf="@+id/selectTime13Am" />
 
     <TextView
         android:id="@+id/textView47"
@@ -203,7 +203,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button17"
+        app:layout_constraintTop_toBottomOf="@+id/selectTime17Am"
         app:layout_constraintVertical_bias="0.177" />
 
     <ImageView
@@ -229,7 +229,7 @@
         android:onClick="Notification"/>
 
     <ImageButton
-        android:id="@+id/imageButton27"
+        android:id="@+id/profileImageButton"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginTop="4dp"
